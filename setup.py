@@ -4,7 +4,7 @@ from os.path import join
 name = 'menhir.skin.lightblue'
 version = '0.1'
 readme = open("README.txt").read()
-history = open("HISTORY.txt").read()
+history = open(join("docs", "HISTORY.txt")).read()
 
 setup(name = name,
       version = version,
