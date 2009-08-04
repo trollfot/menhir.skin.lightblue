@@ -1,0 +1,460 @@
+/** HTML TAGS **/
+
+body {
+  background: white url(bg.png) repeat-x 0 0;
+  font-family: "Trebuchet MS",Verdana,Helvetica,Arial,sans-serif;
+  font-size: 85%;
+}
+
+a {
+  color: #767c82;
+}
+
+ul {
+  margin: 0pt 0pt 10px;
+  padding-left: 1em;
+  list-style-type: square;
+}
+
+h1 {
+  margin: 0.1em 0 0.2em 0;
+}
+
+input, textarea {
+  border: 1px solid #c1ced6;
+  margin: 0.1em 0;
+}
+
+
+/** Very basic styles **/
+
+.discreet {
+  font-size: 80%;
+  color: #889297;
+}
+
+.indented {
+  margin: 1em;
+  padding: 1em;
+  font-weight: 90%;
+}
+
+.odd {
+  background-color: #f4f4f4;
+}
+
+.image-wrapper img {
+  padding: 0.4em !important;
+  border: 2px solid #ddd;
+}
+
+.caption {
+  font-size: 120%;
+  font-weight: bold;
+  color: #666;
+  text-align: center;
+}
+
+.description {
+  font-size: 110%;
+  font-weight: bold;
+  color: #666;
+}
+
+
+/** Master elements **/
+
+#page {
+  margin: 0 16em;
+}
+
+#dolmen-site {
+  margin: 0.5em 1em; 
+}
+
+#breadcrumb {
+  margin-bottom: 1.5em;
+}
+
+#dolmen-inner-body {
+  padding-left: 1em;
+}
+
+.dolmen-content-informations {
+  clear: both;
+  text-align: right;
+  padding: 0.2em;
+  margin-top: 0.5em;
+}
+
+#dolmen-footer {
+  border-top: 1px solid #cbcbcb;
+  background-color: #f4f4f4;
+  padding: 0.5em;
+  color: #666;
+  font-size: 85%;
+}
+
+#dolmen-header {
+  margin-top: 80px;
+}
+
+
+/** Content actions tabs **/
+
+div.content-actions h5 {
+  display: none;
+}
+
+div.content-actions a {
+  color: #91989f;
+}
+
+div.content-actions ul {
+  border-bottom: 1px solid #cbcbcb;
+  margin: 1.2em 0;
+  padding: 0 0 0 1em;
+  text-align: left;
+  font-size: 0.8em;
+  list-style-type: none;
+  text-indent: 0pt;
+  border-collapse: collapse;
+  line-height: 1.75em;
+}
+
+div.content-actions ul li {
+  display: inline;
+}
+
+div.content-actions ul li a {
+  text-decoration: none;
+  background-color: #f9f9f9;
+  border-color: #cbcbcb;
+  border-width: 1px;
+  border-style: solid solid none solid;
+  height: auto;
+  margin-right: 0.5em;
+  padding: 0.2em 1em;
+  text-decoration: none;
+}
+
+div.content-actions ul li.selected a {
+  background-color: #fff;
+  border: 1px solid #cbcbcb;
+  border-bottom: #fff 1px solid;
+  color: #333333;
+  font-weight: bold;
+}
+
+div.content-actions ul li.selected {
+  background-color: #ffffff;
+}
+
+
+/** Login menu bar **/
+
+#login-status ul {
+  text-align: right;
+  padding: 0.5em;
+}
+
+#login-status ul li {
+  display: inline;
+  font-size: 90%;
+  margin-right: 1.5em;
+}
+
+#login-status ul li a {
+  color: #496782;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+/* Dropdown menu */
+
+.incontext-action {
+  padding: 0.2em;
+  margin-top: -2.4em;
+  margin-right: -0.2em;
+  margin-left: 1em;
+  float: right;
+  width: 10em;
+  font-size: 90%;
+}
+
+dl.unfolding dt {
+  background-color: #f9f9f9 !important;
+}
+
+dl.incontext-action dt {
+  background: white url(darrow.gif) no-repeat right 50%;
+  padding-right: 25px;
+  font-weight: bold;
+  padding: 0.2em 0.4em 0.3em 0.4em;
+  border: 1px solid #cbcbcb;
+  color: #555;
+}
+
+.incontext-action dd {
+  margin: 0;
+  display: none;
+  position: absolute;
+  background-color: white;
+  width: 10em;
+}
+
+.incontext-action dd ul { 
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.incontext-action li {
+  margin: 0;
+  padding: 0;
+}
+
+.incontext-action li a {
+  padding: 0.2em 0.3em;
+  display: block;
+  border-width: 0px 1px 1px 1px;
+  border-style: solid;
+  border-color: #cbcbcb;
+  text-decoration: none;
+  background-color: #f9f9f9;
+}
+
+.incontext-action li a img {
+  vertical-align: middle;
+}
+
+.incontext-action li a:hover {
+  background: #ddd;
+  color: #000
+}
+
+
+/** Flash and other messages **/
+
+.info-message {
+  background-color: #f6f7f9;
+  border: 1px solid #dbe3e9;
+  font-size: 90%;
+}
+
+.info-message dt {
+  float: left;
+  padding: 0.4em 10px 0.4em 26px;
+  margin: 0 1em 0 0;
+  font-weight: bold;
+  background: #dbe3e9 url(info.png) 5px 50% no-repeat;
+  text-transform: capitalize;
+}
+
+.info-message dd {
+  padding: 0.4em 1em;
+}
+
+dl.error dt {
+  background-image: url(error.png);
+}
+
+
+/** Form elements **/
+
+.field {
+  margin: 0.5em 0.5em 1.5em 0.5em;
+}
+
+.field .widget {
+  margin-top: 0.5em;
+}
+
+.errored-field {
+  padding: 1em;
+  border: 1px solid #ffddad;
+  background: #fffef5 url(bg_error.png);
+}
+
+.field-error {
+  font-size: 90%;
+  color: #990000;
+}
+
+.actionButtons {
+  margin-left: 1em;
+}
+
+.actionButtons input {
+  background-color: white;
+}
+
+#dolmen-body fieldset {
+  background-color: #f5f7f9;
+  border: 1px solid #c1ced6;
+  margin-bottom: 2em;
+  border-radius : 10px;
+  -moz-border-radius : 10px;
+  -webkit-border-radius : 10px;
+}
+
+#dolmen-body fieldset legend {
+  font-weight: bold;
+  margin-left: 1em;
+}
+
+#dolmen-body fieldset legend:first-letter {
+  color: #47708a;
+}
+
+#dolmen-body fieldset #edition-fields {
+  margin: 1em;
+}
+
+#dolmen-body label {
+  font-weight: bold;
+  padding: 0.2em;
+}
+
+.fieldRequired .textual-info {
+  display: none;
+}
+
+.fieldRequired {
+  line-height: 1.2em;
+  padding-left: 12px;
+  background: transparent url(required.gif) 50% 50% no-repeat;
+}
+
+.image-field input {
+  margin-top: 1em;
+}
+
+/** Navtree **/
+
+.navtree {
+  position: absolute;
+  left: 2em;
+  top: 150px;
+  width: 12em;
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+}
+
+.navtree ul {
+  margin: 1em;
+}
+
+.navtree span {
+  font-size: 90%;
+  padding: 0 0 1em 0.4em; 
+}
+
+#placeholder {
+  background-image: url();
+}
+
+
+/** Search **/
+
+#dolmen-search {
+  margin: -3em 2em 0 0;
+  position: relative;
+  float: right;
+}
+
+#dolmen-search #search-button {
+  height: 24px;
+  width: 24px;
+  cursor: pointer;
+  text-indent: -9999px;
+  border: none;
+  background: url(search.png) no-repeat left top;
+  position: absolute;
+  margin-left: -10px;
+  margin-top: -7px;
+}
+
+.search-results {
+  margin-bottom: 2em;
+}
+
+
+/** Listings **/
+
+.content-listing a {
+  border: 0;
+  text-decoration: none;
+}
+
+.content-listing dt {
+  margin: 0.5em 0;
+}
+
+
+/** Lightbox styles **/
+
+#lbCenter, #lbBottomContainer {
+  border-style: solid;
+  border-color: #666;
+}
+
+#lbCenter {
+  border-width: 3px;
+  background-color: #f4f4f4;
+}
+
+#lbBottomContainer {
+  border-width: 0px 3px 3px 3px;
+}
+
+.form-comment textarea {
+  height: 3em;
+}
+
+
+/* Tables */
+
+table.listing {
+  width: 100%;
+  border-width: 1px 0 0 1px;
+  border-style: solid;
+  border-color: #ddd;
+  border-collapse: collapse;
+  font-size: 90%;
+  margin: 0.5em 0;
+}
+
+table.listing td, table.listing th {
+  border-width: 0 1px 1px 0;
+  border-style: solid;
+  border-color: #ddd;
+  padding: 0.2em;
+  line-height: 1.5em;
+}
+
+table.listing th {
+  padding-left: 16px;
+  background-color: #edf2f4;
+}
+
+table.sortable th.header { 
+    background-image: url(sortable.gif);     
+    cursor: pointer; 
+    font-weight: bold; 
+    background-repeat: no-repeat; 
+    background-position: center left; 
+    padding-left: 20px; 
+    margin-left: -1px; 
+} 
+
+table.sortable th.headerSortUp { 
+    background-image: url(sorted_asc.gif);
+    background-color: #dae2e7; 
+}
+
+table.sortable th.headerSortDown { 
+    background-image: url(sorted_desc.gif);
+    background-color: #dae2e7; 
+}
