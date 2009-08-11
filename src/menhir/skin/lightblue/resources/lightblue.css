@@ -17,7 +17,17 @@ ul {
 }
 
 h1 {
-  margin: 0.1em 0 0.2em 0;
+  margin: 0.1em 0;
+}
+
+h2 {
+  color: #444;
+  margin: 0.1em 0;
+}
+
+h3 {
+  color: #888;
+  margin: 0;
 }
 
 input, textarea {
@@ -25,6 +35,11 @@ input, textarea {
   margin: 0.1em 0;
 }
 
+img {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
 
 /** Very basic styles **/
 
@@ -39,6 +54,12 @@ input, textarea {
   font-weight: 90%;
 }
 
+.date {
+  font-weight: bold;
+  font-size: 90%;
+  text-decoration: italic;
+}
+
 .odd {
   background-color: #f4f4f4;
 }
@@ -46,6 +67,14 @@ input, textarea {
 .image-wrapper img {
   padding: 0.4em !important;
   border: 2px solid #ddd;
+}
+
+.portrait {
+  float: left;
+}
+
+.portrait img {
+  margin: 0.4em;
 }
 
 .caption {
@@ -59,6 +88,12 @@ input, textarea {
   font-size: 110%;
   font-weight: bold;
   color: #666;
+}
+
+ul.simple,
+ul.simple li {
+  list-style-type: none;
+  margin: 0;
 }
 
 
@@ -457,4 +492,41 @@ table.sortable th.headerSortUp {
 table.sortable th.headerSortDown { 
     background-image: url(sorted_desc.gif);
     background-color: #dae2e7; 
+}
+
+.comment .thumb {
+  float: left;
+  margin: 0 1em 0.5em 0.5em;
+  padding: 0.3em;
+  border: 1px solid #ddd;
+}
+
+.comment {
+  clear: both;
+  margin: 0.5em;
+}
+
+.comments {
+  padding: 1em;
+  clear: both;
+}
+
+.comments-listing {
+  padding: 1em;
+}
+
+.clipout {
+  display: block;
+  position: relative;
+  width: 64px;
+  height: 64px;
+  top: 0px;
+  left: 0px;
+}
+
+.clipin {
+  position: absolute;
+  clip: rect(32px 96px 96px 32px);
+  top: -32px;
+  left: -32px;
 }
