@@ -518,15 +518,15 @@ table.sortable th.headerSortDown {
 .clipout {
   display: block;
   position: relative;
-  width: 64px;
-  height: 64px;
+  width: 50px;
+  height: 50px;
   top: 0px;
   left: 0px;
 }
 
 .clipin {
   position: absolute;
-  clip: rect(32px 96px 96px 32px);
+  clip: rect(32px 82px 82px 32px);
   top: -32px;
   left: -32px;
 }
