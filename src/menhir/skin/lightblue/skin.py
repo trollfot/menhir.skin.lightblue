@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 
 import grok
-from megrok.z3cform import FormLayer
+from dolmen.app.layout import skin
 from zope.publisher.interfaces import browser
 
 
-class ILightblueLayer(FormLayer):
+class ILightblueLayer(skin.IDolmenBaseLayer):
     """Base layer for lightblue components
     """
 
