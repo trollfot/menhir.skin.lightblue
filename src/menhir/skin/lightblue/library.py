@@ -1,18 +1,23 @@
 import grok
-import megrok.resourcelibrary
+from megrok import resource
 from zope.interface import Interface
-from dolmen.app.layout.master import DolmenHeader
-from menhir.library.jquery import JQueryBase
+from dolmen.app.layout.master import Header
+from menhir.library.jquery import jquery
 from menhir.skin.lightblue import ILightblueLayer
 
 
-class LightblueDolmenLibrary(megrok.resourcelibrary.ResourceLibrary):
-    grok.name("menhir.skin.lightblue")
-    grok.layer(ILightblueLayer)
-    megrok.resourcelibrary.depend(JQueryBase)
-    megrok.resourcelibrary.directory('resources')
-    megrok.resourcelibrary.include('lightblue.css')
-    megrok.resourcelibrary.include('lightblue.dropdown.js')
+class LightblueLibrary(resource.Library):
+    resource.path('resources')
+    resource.name("menhir.skin.lightblue")
+    resource.layer(ILightblueLayer)
+
+bluejs = resource.ResourceInclusion(
+    Lightblue, 'lightblue.dropdown.js', depends=[jquery])
+
+bluecss = resource.ResourceInclusion(
+    Lightblue, 'lightblue.css')
+
+lightblue = resource.GroupInclusion([bluejs, bluecss])
 
 
 class LightBlueResourceViewlet(grok.Viewlet):
@@ -21,6 +26,6 @@ class LightBlueResourceViewlet(grok.Viewlet):
     grok.context(Interface)
 
     def render(self):
-        LightblueDolmenLibrary.need()
+        lightblue.need()
         return u""
     

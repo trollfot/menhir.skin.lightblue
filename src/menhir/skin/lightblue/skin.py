@@ -5,7 +5,7 @@ from dolmen.app.layout import skin
 from zope.publisher.interfaces import browser
 
 
-class ILightblueLayer(skin.IDolmenBaseLayer):
+class ILightblueLayer(skin.IBaseLayer):
     """Base layer for lightblue components
     """
 
