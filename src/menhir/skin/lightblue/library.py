@@ -9,7 +9,7 @@ from menhir.skin.lightblue import ILightblueLayer
 class LightblueLibrary(resource.Library):
     resource.path('resources')
     resource.name("menhir.skin.lightblue")
-    resource.layer(ILightblueLayer)
+    grok.layer(ILightblueLayer)
 
 bluejs = resource.ResourceInclusion(
     Lightblue, 'lightblue.dropdown.js', depends=[jquery])
