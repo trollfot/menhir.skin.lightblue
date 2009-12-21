@@ -5,4 +5,4 @@ except ImportError:
     __path__ = extend_path(__path__, __name__)
 
 from skin import ILightblueLayer, ILightBlueSkin
-from library import LightblueDolmenLibrary
+from library import lightblue

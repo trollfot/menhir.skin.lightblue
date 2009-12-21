@@ -12,10 +12,10 @@ class LightblueLibrary(resource.Library):
     grok.layer(ILightblueLayer)
 
 bluejs = resource.ResourceInclusion(
-    Lightblue, 'lightblue.dropdown.js', depends=[jquery])
+    LightblueLibrary, 'lightblue.dropdown.js', depends=[jquery])
 
 bluecss = resource.ResourceInclusion(
-    Lightblue, 'lightblue.css')
+    LightblueLibrary, 'lightblue.css')
 
 lightblue = resource.GroupInclusion([bluejs, bluecss])
 
