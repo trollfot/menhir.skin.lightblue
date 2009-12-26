@@ -112,7 +112,8 @@ ul.simple li {
 }
 
 #dolmen-inner-body {
-  padding-left: 1em;
+  padding: 1em;
+  border-top: 1px solid #ddd;
 }
 
 .dolmen-content-informations {
@@ -156,6 +157,7 @@ dl#contextual-actions a {
 dl#contextual-actions {
   font-size: 0.9em;
   line-height: 1.7em;
+  margin-left: 0.6em;
 }
 
 dl#contextual-actions ul {
@@ -165,7 +167,7 @@ dl#contextual-actions ul {
   list-style-type: none;
   text-indent: 0pt;
   border-collapse: collapse;
-  line-height: 1.6em;
+  line-height: 1.75em;
 }
 
 dl#contextual-actions ul li {
@@ -227,7 +229,6 @@ dl.menu li.selected a {
 
 dl.additional-actions {
   padding: 0.2em;
-  margin-right: 2em;
   float: right;
   width: 10em;
   font-size: 90%;
