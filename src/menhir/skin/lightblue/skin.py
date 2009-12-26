@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 
-import grok
-from dolmen.app.layout import skin
+import grokcore.viewlet as grok
+from dolmen.app import layout
 from zope.publisher.interfaces import browser
 
 
-class ILightblueLayer(skin.IBaseLayer):
+class ILightblueLayer(layout.IBaseLayer):
     """Base layer for lightblue components
     """
 

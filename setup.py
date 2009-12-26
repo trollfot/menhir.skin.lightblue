@@ -24,10 +24,10 @@ setup(name = name,
       zip_safe = True,
       install_requires=[
           'setuptools',
-          'grok',
+          'grokcore.viewlet',
           'dolmen.app.layout',
-          'megrok.resourcelibrary',
-          'menhir.library.jquery',
+          'hurry.jquery',
+          'megrok.resource',
       ],
       classifiers = [
         'Development Status :: 4 - Beta',

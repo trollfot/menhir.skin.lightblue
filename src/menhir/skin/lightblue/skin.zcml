@@ -1,8 +1,3 @@
-<configure
-    xmlns="http://namespaces.zope.org/zope"
-    xmlns:browser="http://namespaces.zope.org/browser"
-    >
-
-    <browser:defaultSkin name="lightblue"/>
-
+<configure xmlns="http://namespaces.zope.org/browser">
+  <defaultSkin name="lightblue"/>
 </configure>
