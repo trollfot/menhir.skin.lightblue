@@ -167,7 +167,7 @@ dl#contextual-actions ul {
   list-style-type: none;
   text-indent: 0pt;
   border-collapse: collapse;
-  line-height: 1.75em;
+  line-height: 20px;
 }
 
 dl#contextual-actions ul li {
