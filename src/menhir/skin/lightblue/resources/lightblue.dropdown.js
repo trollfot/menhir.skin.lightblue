@@ -1,11 +1,11 @@
 $(document).ready(function(){
-    $(".incontext-action").hover(
+    $("dl.additional-actions").hover(
         function() {
-           $("dd", this).show();
+           $("dd", this).slideDown('fast');
            $(this).addClass("unfolding");
         }, 
         function() {
-           $("dd", this).hide();
+           $("dd", this).slideUp('fast');
            $(this).removeClass("unfolding");
         } 
     );
