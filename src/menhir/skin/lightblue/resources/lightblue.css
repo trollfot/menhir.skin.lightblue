@@ -129,6 +129,7 @@ ul.simple li {
   padding: 0.5em;
   color: #666;
   font-size: 85%;
+  clear: both;
 }
 
 #dolmen-header {
