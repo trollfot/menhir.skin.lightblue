@@ -331,6 +331,11 @@ dl.error dt {
   margin-top: 0.5em;
 }
 
+#form-field-title {
+  font-size: 110%;
+  width: 25em;
+}
+
 .errored-field {
   padding: 1em;
   border: 1px solid #ffddad;
@@ -342,12 +347,14 @@ dl.error dt {
   color: #990000;
 }
 
-.actionButtons {
-  margin-left: 1em;
-}
-
-.actionButtons input {
+.actions input {
+  font-size: 110%;
   background-color: white;
+  padding: 0.2em 0.5em;
+  margin-right: 1em;
+  border-color: #a0abb1;
+  -moz-border-radius : 10px 0px;
+  -webkit-border-radius : 10px 0px;
 }
 
 #dolmen-body fieldset {
@@ -357,6 +364,7 @@ dl.error dt {
   border-radius : 10px;
   -moz-border-radius : 10px;
   -webkit-border-radius : 10px;
+  padding: 1em;
 }
 
 #dolmen-body fieldset legend {
@@ -364,24 +372,16 @@ dl.error dt {
   margin-left: 1em;
 }
 
-#dolmen-body fieldset legend:first-letter {
-  color: #47708a;
-}
-
-#dolmen-body fieldset #edition-fields {
-  margin: 1em;
-}
-
 #dolmen-body label {
   font-weight: bold;
   padding: 0.2em;
 }
 
-.fieldRequired .textual-info {
+.field-required span {
   display: none;
 }
 
-.fieldRequired {
+.field-required {
   line-height: 1.2em;
   padding-left: 12px;
   background: transparent url(required.gif) 50% 50% no-repeat;

@@ -5,6 +5,8 @@
   <include package="grok" />
   <include package="hurry.jquery" />
   <include package="megrok.resource" />
+  <include package="megrok.pagetemplate" file="meta.zcml" />
+
   <grok:grok package="." />
 
 </configure>

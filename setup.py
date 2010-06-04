@@ -28,6 +28,8 @@ setup(name = name,
           'dolmen.app.layout',
           'hurry.jquery',
           'megrok.resource',
+          'megrok.pagetemplate',
+          'dolmen.forms.crud',
       ],
       classifiers = [
         'Development Status :: 4 - Beta',
