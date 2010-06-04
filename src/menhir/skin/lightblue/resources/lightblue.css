@@ -113,7 +113,6 @@ ul.simple li {
 
 #dolmen-inner-body {
   padding: 1em;
-  border-top: 1px solid #ddd;
 }
 
 .dolmen-content-informations {
@@ -133,11 +132,14 @@ ul.simple li {
 }
 
 #dolmen-header {
-  margin-top: 80px;
+  margin-top: 6em;
 }
 
-
 /** Content actions tabs **/
+#contextual-actions {
+  height: 21px;
+  border-bottom: 1px solid #ddd;
+}
 
 #anonymous-actions dt,
 #user-actions dt,
@@ -231,7 +233,7 @@ dl.menu li.selected a {
 dl.additional-actions {
   padding: 0.2em;
   float: right;
-  width: 10em;
+  width: 15em;
   font-size: 90%;
 }
 
@@ -253,7 +255,7 @@ dl.additional-actions dd {
   display: none;
   position: absolute;
   background-color: white;
-  width: 10em;
+  width: 15em;
 }
 
 dl.additional-actions dd ul { 
@@ -536,20 +538,4 @@ table.sortable th.headerSortDown {
 
 .comments-listing {
   padding: 1em;
-}
-
-.clipout {
-  display: block;
-  position: relative;
-  width: 50px;
-  height: 50px;
-  top: 0px;
-  left: 0px;
-}
-
-.clipin {
-  position: absolute;
-  clip: rect(32px 82px 82px 32px);
-  top: -32px;
-  left: -32px;
 }
