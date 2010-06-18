@@ -3,7 +3,7 @@
 body {
   background: white url(bg.png) repeat-x 0 0;
   font-family: "Trebuchet MS",Verdana,Helvetica,Arial,sans-serif;
-  font-size: 85%;
+  font-size: 0.85em;
 }
 
 a {
@@ -64,17 +64,23 @@ img {
   background-color: #f4f4f4;
 }
 
+.widget-image-preview img,
 .image-wrapper img {
-  padding: 0.4em !important;
-  border: 2px solid #ddd;
+  padding: 1em !important;
+  border: 2px solid #ccc;
+  background: white;
+  border-radius:  10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
 }
 
 .portrait {
   float: left;
+  padding-right: 1em;
 }
 
 .portrait img {
-  margin: 0.4em;
+  background-color: #fafafa;  
 }
 
 .caption {
@@ -336,35 +342,26 @@ dl.error dt {
   width: 25em;
 }
 
-.errored-field {
-  padding: 1em;
-  border: 1px solid #ffddad;
-  background: #fffef5 url(bg_error.png);
-}
-
-.field-error {
-  font-size: 90%;
-  color: #990000;
-}
-
 .actions input {
   font-size: 110%;
   background-color: white;
   padding: 0.2em 0.5em;
   margin-right: 1em;
   border-color: #a0abb1;
-  -moz-border-radius : 10px 0px;
-  -webkit-border-radius : 10px 0px;
+  border-radius:  10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
 }
 
 #dolmen-body fieldset {
   background-color: #f5f7f9;
   border: 1px solid #c1ced6;
   margin-bottom: 2em;
-  border-radius : 10px;
-  -moz-border-radius : 10px;
-  -webkit-border-radius : 10px;
   padding: 1em;
+  border-radius : 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+
 }
 
 #dolmen-body fieldset legend {
@@ -538,4 +535,42 @@ table.sortable th.headerSortDown {
 
 .comments-listing {
   padding: 1em;
+}
+
+.form-errors h3 {
+  color: #990000;
+  margin: 0 0 0.5em 0;
+}
+
+.form-errors ul {
+  margin: 0 0 1em 1em;
+}
+
+.error-field {
+  border: 1px solid #f1c081;
+  padding: 0.5em 1em;
+  background: #fff9e6 url(bg_error.png);
+}
+
+.field-description {
+  margin: 0;
+  padding: 0 0 0 0.4em;
+  color: #666;
+}
+
+.error-message {
+  margin: 0;
+  padding: 0 0 0 0.4em;
+  font-size: 90%;
+  color: #990000;
+}
+
+.error-field input,
+.error-field select,
+.error-field textarea {
+  border: 1px solid #f1c081;
+}
+
+.fields .widget {
+  margin-left: 0.4em;
 }

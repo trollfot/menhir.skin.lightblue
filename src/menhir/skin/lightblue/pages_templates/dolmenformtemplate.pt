@@ -1,4 +1,5 @@
-<form action="." tal:attributes="action request/URL" method="post"
+<form i18n:domain="dolmen.forms.crud"
+      action="." tal:attributes="action request/URL" method="post"
       enctype="multipart/form-data">
 
   <h1 tal:condition="view/label"
@@ -11,46 +12,45 @@
      tal:condition="view/status"
      tal:content="view/status">Status</p>
 
-  <dl class="form-error"
-     tal:condition="view/errors">
-    <dt>There were errors:</dt>
-    <tal:error tal:define="formErrors view/submissionError"
-               tal:condition="formErrors">
-      <dd tal:repeat="error formErrors">
-	<span tal:content="error/identifier" />:
-	<span tal:content="error/title" />
-      </dd>
-    </tal:error>
-  </dl>
+  <div class="form-errors" tal:condition="view/errors">
+    <h3 i18n:translate="">Errors occured during the form processing</h3>
+    <ul tal:define="errors view/formError"
+	tal:condition="errors">
+      <li class="error-message"
+	  tal:repeat="formError errors"
+	  tal:content="formError/title" />
+    </ul>
+  </div>
 
   <fieldset tal:omit-tag="not: view/actionWidgets">
-    <div class="fields"
-	 tal:condition="view/fieldWidgets">
-      <div class="field" tal:repeat="widget view/fieldWidgets">
+    <div class="fields" tal:condition="view/fieldWidgets">
+      <tal:widget tal:repeat="widget view/fieldWidgets">
+      <div tal:define="error widget/error"
+	   tal:attributes="class python: error and
+			                 'field error-field' or 'field'">
 	<label class="field-label" for="#"
 	       tal:attributes="for widget/htmlId"
 	       tal:content="widget/title">
 	  Label
 	</label>
 	<span class="field-required"
-	      tal:condition="widget/required"><span>(required)</span></span>
-	<br />
-	<tal:description tal:condition="widget/description">
-	  <span class="field-description"
-		tal:content="widget/description">
-	    </span><br />
-	</tal:description>
-	<tal:error tal:define="error widget/error"
-		   tal:condition="error">
-	  <span class="field-error"
-		tal:content="error/title">
-	    Error
-	  </span>
-	</tal:error>
+	      tal:condition="widget/required">
+	  <span>(required)</span>
+	</span>
+	<p class="field-description"
+	   tal:condition="widget/description"
+	   tal:content="widget/description">
+	</p>	   
+	<p class="error-message"
+	   tal:condition="error"
+	   tal:content="error/title">
+	  Error
+	</p>
 	<div class="widget">
 	  <tal:widget tal:content="structure widget/render" />
 	</div>
       </div>
+      </tal:widget>
     </div>
 
     <div class="actions"
