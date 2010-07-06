@@ -208,6 +208,12 @@ dl#contextual-actions ul li.selected a {
 }
 
 /** Login menu bar **/
+#home-viewlet {
+  text-align: right;
+  margin-right: 2em;
+  font-weight: bold;
+  color: #5689a9;
+}
 
 dl.menu li.selected a {
   color: #888;
@@ -573,4 +579,9 @@ table.sortable th.headerSortDown {
 
 .fields .widget {
   margin-left: 0.4em;
+}
+
+.sequence-block {
+  clear: both;
+  margin: 0.5em 1em;
 }
