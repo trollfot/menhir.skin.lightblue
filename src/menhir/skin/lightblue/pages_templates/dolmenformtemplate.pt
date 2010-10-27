@@ -1,5 +1,5 @@
 <form action="." tal:attributes="action request/URL" method="post"
-      enctype="multipart/form-data">
+      enctype="multipart/form-data" i18n:domain="zeam.form.base">
 
   <h1 tal:condition="view/label"
       tal:content="view/label">Label</h1>
@@ -11,16 +11,12 @@
      tal:condition="view/status"
      tal:content="view/status">Status</p>
 
-  <dl class="form-error"
-     tal:condition="view/errors">
-    <dt>There were errors:</dt>
-    <tal:error tal:define="formErrors view/submissionError"
-               tal:condition="formErrors">
-      <dd tal:repeat="error formErrors">
-	<span tal:content="error/identifier" />:
-	<span tal:content="error/title" />
-      </dd>
-    </tal:error>
+  <dl class="form-errors" tal:condition="view/formErrors">
+    <dt i18n:translate="">There were errors.</dt>
+    <dd class="form-error"
+	tal:repeat="error view/formErrors">
+      <span tal:content="error/title" />
+    </dd>
   </dl>
 
   <fieldset tal:omit-tag="not: view/actionWidgets">
