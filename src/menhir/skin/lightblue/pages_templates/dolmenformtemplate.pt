@@ -30,7 +30,7 @@
 	       tal:content="widget/title">
 	  Label
 	</label>
-	<span class="field-required"
+	<span class="required-marker"
 	      tal:condition="widget/required">
 	  <span>(required)</span>
 	</span>

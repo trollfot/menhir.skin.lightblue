@@ -336,7 +336,7 @@ dl.error dt {
 /** Form elements **/
 
 .field {
-  margin: 0.5em 0.5em 1.5em 0.5em;
+  margin: 0.5em 0.5em 0.8em 0.5em;
 }
 
 .field .widget {
@@ -380,11 +380,11 @@ dl.error dt {
   padding: 0.2em;
 }
 
-.field-required span {
+.required-marker span {
   display: none;
 }
 
-.field-required {
+.required-marker {
   line-height: 1.2em;
   padding-left: 12px;
   background: transparent url(required.gif) 50% 50% no-repeat;
