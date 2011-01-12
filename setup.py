@@ -23,13 +23,13 @@ setup(name = name,
       platforms = 'Any',
       zip_safe = True,
       install_requires=[
-          'setuptools',
-          'grokcore.viewlet',
           'dolmen.app.layout',
-          'hurry.jquery',
-          'megrok.resource',
-          'megrok.pagetemplate',
           'dolmen.forms.crud',
+          'fanstatic',
+          'grokcore.viewlet',
+          'js.jquery',
+          'megrok.pagetemplate',
+          'setuptools',
       ],
       classifiers = [
         'Development Status :: 4 - Beta',
@@ -40,4 +40,10 @@ setup(name = name,
         'Operating System :: OS Independent',
         'Programming Language :: Python',
       ],
+      entry_points = """
+      [fanstatic.libraries]
+      lightblue = menhir.skin.lightblue:LightblueLibrary
+      """,
+
+
 )

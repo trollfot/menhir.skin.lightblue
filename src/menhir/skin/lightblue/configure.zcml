@@ -3,7 +3,6 @@
     xmlns:grok="http://namespaces.zope.org/grok">
 
   <include package="grok" />
-  <include package="hurry.jquery" />
   <include package="megrok.resource" />
   <include package="megrok.pagetemplate" file="meta.zcml" />
 
