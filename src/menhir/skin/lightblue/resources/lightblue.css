@@ -98,6 +98,10 @@ img {
   background-color: #fafafa;  
 }
 
+.advance-link {
+  text-decoration: none;
+}
+
 .caption {
   font-size: 120%;
   font-weight: bold;
