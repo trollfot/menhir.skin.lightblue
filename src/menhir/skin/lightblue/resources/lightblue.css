@@ -75,10 +75,6 @@ img {
   text-decoration: italic;
 }
 
-.odd {
-  background-color: #f4f4f4;
-}
-
 .widget-image-preview {
   padding: 0.5em;
 }
@@ -500,11 +496,15 @@ dl.error dt {
 
 /* Tables */
 
+div.folder-listing > div {
+  padding: 0.5em 1em;
+}
+
 table.listing {
   width: 100%;
   border-width: 1px 0 0 1px;
   border-style: solid;
-  border-color: #ddd;
+  border-color: #aaa;
   border-collapse: collapse;
   font-size: 90%;
   margin: 0.5em 0;
@@ -513,14 +513,36 @@ table.listing {
 table.listing td, table.listing th {
   border-width: 0 1px 1px 0;
   border-style: solid;
-  border-color: #ddd;
+  border-color: #aaa;
   padding: 0.2em;
   line-height: 1.5em;
 }
 
+table.listing td {
+  padding: 0.2em 0.5em;
+}
+
+table.listing td a {
+  color: #666;
+  text-decoration: none;
+}
+
+table.listing td img {
+  vertical-align: middle;
+}
+
+table.listing tr.even {
+  background-color: #fff !important;
+}
+
+table.listing tr.odd {
+  background-color: #f4f4f4 !important;
+}
+
 table.listing th {
+  color: #444;
   padding-left: 16px;
-  background-color: #edf2f4;
+  background: #dadada;
 }
 
 table.sortable th.header { 
@@ -535,12 +557,12 @@ table.sortable th.header {
 
 table.sortable th.headerSortUp { 
     background-image: url(sorted_asc.gif);
-    background-color: #dae2e7; 
+    background-color: #dadada; 
 }
 
 table.sortable th.headerSortDown { 
     background-image: url(sorted_desc.gif);
-    background-color: #dae2e7; 
+    background-color: #dadada; 
 }
 
 .comment .thumb {
