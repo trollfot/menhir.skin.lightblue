@@ -32,17 +32,18 @@ h1 {
   color: white;
   text-shadow: 0 1px 2px #143855;
   background: url("title-bg.png") repeat-x scroll 0 0 #237ABF;
-  padding: 0.5em 1em;
+  padding: 0.5em;
 }
 
 h2 {
   color: #444;
-  margin: 0.1em 0;
+  margin: 0.5em;
 }
 
 h3 {
   color: #888;
   margin: 0;
+  margin: 0.5em;
 }
 
 input, textarea {
@@ -452,7 +453,7 @@ dl.error dt {
 /** Search **/
 
 #searchbox {
-  margin: -3em 2em 0 0;
+  margin: 2em 0 0 0;
   position: relative;
   float: right;
 }
@@ -470,7 +471,7 @@ dl.error dt {
 }
 
 .search-results {
-  margin-bottom: 2em;
+  margin: 1em;
 }
 
 
