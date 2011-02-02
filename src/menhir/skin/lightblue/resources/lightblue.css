@@ -121,6 +121,9 @@ ul.simple li {
   margin: 0;
 }
 
+.content .image {
+  margin: 1em;
+}
 
 /** Master elements **/
 
