@@ -53,7 +53,7 @@
     <div class="actions"
 	 tal:condition="view.actionWidgets">
       <tal:widget repeat="widget view.actionWidgets"
-		  content="structure widget.render" />
+		  content="structure widget.render()" />
     </div>
   </fieldset>
 
