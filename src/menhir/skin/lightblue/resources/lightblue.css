@@ -79,14 +79,18 @@ img {
   background-color: #f4f4f4;
 }
 
+.widget-image-preview {
+  padding: 0.5em;
+}
+
 .widget-image-preview img,
 .image-wrapper img {
-  padding: 1em !important;
-  border: 2px solid #ccc;
+  padding: 0.5em !important;
+  border: 1px solid #c1ced6;
   background: white;
-  border-radius:  10px;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
 }
 
 .portrait {
@@ -133,7 +137,13 @@ ul.simple li {
 }
 
 #breadcrumb {
-  margin-bottom: 1.5em;
+  position: absolute;
+  top: 110px;
+  color: #ddd;
+}
+
+#breadcrumb a {
+  color: #adadad;
 }
 
 #dolmen-inner-body {
@@ -148,10 +158,8 @@ ul.simple li {
   margin-top: 0.5em;
 }
 
-#dolmen-footer {
-  padding: 0.5em;
-  color: #666;
-  font-size: 85%;
+#dolmen-below-body {
+  background-color: white;
   clear: both;
 }
 
@@ -271,18 +279,19 @@ dl.additional-actions {
   float: right;
   width: 15em;
   font-size: 90%;
+  margin-right: 1em;
 }
 
 dl.unfolding dt {
-  background-color: #f9f9f9 !important;
+  background-color: white !important;
 }
 
 dl.additional-actions dt {
-  background: white url(darrow.gif) no-repeat right 50%;
+  background: rgba(255, 255, 255, 0.8) url(darrow.gif) no-repeat right 50%;
   padding-right: 25px;
   font-weight: bold;
   padding: 0.2em 0.4em 0.3em 0.4em;
-  border: 1px solid #cbcbcb;
+  border: 1px solid white;
   color: #555;
 }
 
@@ -290,8 +299,8 @@ dl.additional-actions dd {
   margin: 0;
   display: none;
   position: absolute;
-  background-color: white;
   width: 15em;
+  background-color: #91bddf;
 }
 
 dl.additional-actions dd ul { 
@@ -301,15 +310,14 @@ dl.additional-actions dd ul {
 }
 
 dl.additional-actions li {
-  margin: 0;
+  margin: 1px 0 0 0;
   padding: 0;
 }
 
 dl.additional-actions li.selected a {
-  color: #5aa1a9;
+  color: black;
   font-style: oblique;
-  background: #efefef url(selected.gif) 0 0.5em no-repeat;
-  padding: 0.2em 0.3em 0.2em 15px;
+  background: #d2e4f3 url(selected.gif) 0 0.5em no-repeat !important;
 }
 
 dl.additional-actions li a {
@@ -317,18 +325,19 @@ dl.additional-actions li a {
   display: block;
   border-width: 0px 1px 1px 1px;
   border-style: solid;
-  border-color: #cbcbcb;
+  border-color: white;
   text-decoration: none;
-  background-color: #f9f9f9;
+  background-color: white !important;
+  padding: 0.2em 0.3em 0.2em 8px;
+}
+
+dl.additional-actions li a:hover {
+  color: #444;
+  background: white url(hovered.gif) 0 0.5em no-repeat;
 }
 
 dl.additional-actions li a img {
   vertical-align: middle;
-}
-
-dl.additional-actions li a:hover {
-  color: #000;
-  background-color: #ddd;
 }
 
 /** Flash and other messages **/
@@ -408,6 +417,10 @@ dl.error dt {
   padding: 0.2em;
 }
 
+#dolmen-body input#form-field-title {
+  font-size: 150%;
+}
+
 .required-marker span {
   display: none;
 }
@@ -420,30 +433,6 @@ dl.error dt {
 
 .image-field input {
   margin-top: 1em;
-}
-
-/** Navtree **/
-
-.navtree {
-  position: absolute;
-  left: 2em;
-  top: 150px;
-  width: 12em;
-  background-color: #f4f4f4;
-  border: 1px solid #ddd;
-}
-
-.navtree ul {
-  margin: 1em;
-}
-
-.navtree span {
-  font-size: 90%;
-  padding: 0 0 1em 0.4em; 
-}
-
-#placeholder {
-  background-image: url();
 }
 
 
