@@ -44,7 +44,7 @@
 	  Error
 	</p>
 	<div class="widget">
-	  <tal:widget tal:content="structure widget.render" />
+	  <tal:widget tal:content="structure widget.render()" />
 	</div>
       </div>
       </tal:widget>
