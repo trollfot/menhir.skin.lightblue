@@ -26,7 +26,7 @@
 	   tal:attributes="class python: error and
 			                 'field error-field' or 'field'">
 	<label class="field-label" for="#"
-	       tal:attributes="for widget.htmlId"
+	       tal:attributes="for widget.htmlId()"
 	       tal:content="widget.title">
 	  Label
 	</label>

@@ -9,7 +9,7 @@
     <tal:widget tal:repeat="widget view.fieldWidgets">
       <div class="field">
 	<label class="field-label" for="#"
-	       tal:attributes="for widget.htmlId"
+	       tal:attributes="for widget.htmlId()"
 	       tal:content="widget.title">
 	  Label
 	</label>
@@ -18,7 +18,7 @@
 	   tal:content="widget.description">
 	</p>	   
 	<div class="widget">
-	  <tal:widget tal:content="structure widget.render" />
+	  <tal:widget tal:content="structure widget.render()" />
 	</div>
       </div>
     </tal:widget>
