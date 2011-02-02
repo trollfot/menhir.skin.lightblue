@@ -3,9 +3,7 @@
     xmlns:grok="http://namespaces.zope.org/grok">
 
   <include package="grok" />
-  <include package="megrok.resource" />
   <include package="megrok.pagetemplate" file="meta.zcml" />
-
   <grok:grok package="." />
 
 </configure>
