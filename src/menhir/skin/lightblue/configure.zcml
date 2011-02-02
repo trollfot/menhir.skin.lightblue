@@ -2,8 +2,14 @@
     xmlns="http://namespaces.zope.org/zope"
     xmlns:grok="http://namespaces.zope.org/grok">
 
-  <include package="grok" />
   <include package="megrok.pagetemplate" file="meta.zcml" />
+  <include package="megrok.layout" file="meta.zcml" />
+
+  <include package="grok" />
+  <include package="megrok.chameleon" />
+  <include package="dolmen.app.layout" />
+  <include package="megrok.layout" />
+
   <grok:grok package="." />
 
 </configure>

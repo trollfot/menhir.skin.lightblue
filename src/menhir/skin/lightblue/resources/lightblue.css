@@ -132,8 +132,12 @@ ul.simple li {
   margin: 0 16em
 }
 
+#blue-body {
+  border: 10px solid rgba(255, 255, 255, 0.1)
+}
+
 #dolmen-body {
-  border: 10px solid rgba(255, 255, 255, 0.1);
+  background-color: white;
 }
 
 #breadcrumb {
@@ -148,7 +152,6 @@ ul.simple li {
 
 #dolmen-inner-body {
   padding: 1px;
-  background-color: white;
 }
 
 .dolmen-content-informations {
