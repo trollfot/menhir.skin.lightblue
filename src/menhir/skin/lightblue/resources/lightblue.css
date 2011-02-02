@@ -343,22 +343,28 @@ dl.additional-actions li a img {
 /** Flash and other messages **/
 
 .info-message {
-  background-color: #f6f7f9;
-  border: 1px solid #dbe3e9;
   font-size: 90%;
+  margin: 0;
+  padding: 0;
 }
 
 .info-message dt {
   float: left;
-  padding: 0.4em 10px 0.4em 26px;
-  margin: 0 1em 0 0;
+  padding: 0 1em 0 26px;
+  margin: 1px 1em 1px 1px;
+  color: white;
   font-weight: bold;
-  background: #dbe3e9 url(info.png) 5px 50% no-repeat;
+  background: #143855 url(info.png) 5px 50% no-repeat;
   text-transform: capitalize;
+  line-height: 2.3em;
 }
 
 .info-message dd {
-  padding: 0.4em 1em;
+  padding: 0 1em;
+  margin: 1px 0 1px 0.4em;
+  line-height: 2.3em;
+  font-style: oblique;
+  color: #666;
 }
 
 dl.error dt {
