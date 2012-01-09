@@ -6,7 +6,7 @@
   <include package="megrok.layout" file="meta.zcml" />
 
   <include package="grok" />
-  <include package="megrok.chameleon" />
+  <include package="grokcore.chameleon" />
   <include package="dolmen.app.layout" />
   <include package="megrok.layout" />
 
